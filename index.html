@@ -1,6 +1,6 @@
-<html>
+<html ng-app='MsgApp'>
 
-<head ng-app='MsgApp'>
+<head>
     <meta charset='utf-8'>
     <script src='angular.min.js'></script>
     <script src='app.js'></script>
@@ -16,6 +16,7 @@
 
     <div ng-controller='MsgController'>
 	Message is: <br>
+    {{sayMessage()}}<br>
     </div>
 </body>
 

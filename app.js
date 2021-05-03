@@ -5,6 +5,10 @@ angular.module('MsgApp', [])
 
 MsgController.$inject = ['$scope'];
 function MsgController($scope){
-    $scope.name = "Yaakov";
+    $scope.name = "Dino";
+
+    $scope.sayMessage = function(){
+        return $scope.name + " likes to eat healthy snacks at night"
+    }
 }
 })();
