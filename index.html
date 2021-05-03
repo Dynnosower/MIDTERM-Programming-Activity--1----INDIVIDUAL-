@@ -7,6 +7,8 @@
     <style> 
         body 
         { font-size: 1.2em }
+        button
+        { font-size: 3em}
     </style>
     <title>Expressions and Interpolation</title>
 </head>
@@ -17,6 +19,10 @@
     <div ng-controller='MsgController'>
 	Message is: <br>
     {{sayMessage()}}<br>
+        <div>
+            <button align='center' ng-click='wave()' >Wave</button>
+            <img ng-src='Images/{{state}}.png'>
+        </div>
     </div>
 </body>
 
